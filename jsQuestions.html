@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h1>Javascript Assignment</h1>
+
+    <h3>1.)Javascript Datatypes:</h3>
+    <ul>
+        <li>Primitive data type</li>
+        <li>Non-Primitive data types</li>
+    </ul>
+
+    <h3>Primitive data type:</h3>
+    <ul>
+        <li>String</li>
+        <li>Number</li>
+        <li>Boolean</li>
+        <li>Undefined</li>
+        <li>Symbol</li>
+        <li>Null</li>
+    </ul>
+
+    <h3>Non-Primitive data type:</h3>
+
+    <ul>
+        <li>Array</li>
+        <li>Object</li>
+    </ul>
+
+    <hr>
+
+
+
+    <h3>2.)Javascript "=="  and "===":</h3>
+
+    <ul>
+        <li>Javascript ==  : It will just check the value of both are same.</li>
+        <li>Javascript ===  : It will check both the value and type are same.</li>
+    </ul>
+ 
+
+    let X="10" ;
+    let Y=10 ; <br><br>
+
+    if(X==Y)  ==> output: <b>true </b>  (Here only the values are checked. so its true)
+    <br> 
+    if(X===Y)   ==> output: <b>false </b>  (Here both the value and type are checked. so its false . Type of X is String)
+    <br>
+    <br>
+
+
+
+
+    <hr>
+
+
+    <h3>3.)The concept of implicit type casting in JavaScript:</h3>
+    <ul>
+        <li>Implicit Conversion is done by Javascript in order to make the operation possible.</li>
+        <li>JavaScript converts to a type automatically</li>
+    </ul>
+
+    <h4>Example:</h4>
+    var price="100.00";<br>
+    var discount="10";<br>
+    var discountAmonunt=price*(discount/100);<br>
+
+
+    <p>Here discount is converted to a number and discount is divided by 100 then price is converted to number and value is multiplied</p>
+
+    
+    <hr>
+
+    <h3>4.) NaN, Infinity, Null and Undefined with proper explanation and examples:</h3>
+    <ul>
+        <h4>NaN:</h4>
+        <li> In JavaScript, NaN is short for "Not-a-Number".</li>
+        <li>In JavaScript, NaN is a number that is not a legal number. </li>
+
+    </ul>
+
+
+
+
+    <ul>
+        <h4>Infinity:</h4>
+        <li> A number reaches Infinity when it exceeds the upper limit for a number:.</li>
+        <li>1.797693134862315E+308. </li>
+        <li>Infinity is a number that represents positive infinity.</li>
+        <li>-Infinity represents negative infinity.</li>
+
+        <h4>Example for infinity:</h4>
+
+        <p>let x = 1.797693134862315E+308; <br>
+            let y = x * 1.001;<br>
+            console.log(y); <br>
+            output: infinity
+        </p>
+    </ul>
+
+
+
+
+    <ul>
+        <h4>Null:</h4>
+        <li> A value that is explicitly specified by the keyword “null” is known as null value</li>
+        <li>Null is of type object in Javascript </li>
+
+        <h4>Example for null:</h4>
+
+        <p>var test=null;<br>
+          console.log(test);<br>
+          //null </p>
+    </ul>
+
+
+
+
+    <ul>
+        <h4>Undefined:</h4>
+        <li>Undefined is of type undefined.</li>
+
+
+        <h4>Example for undefined:</h4>
+
+        <p>var testNum;<br>
+            console.log(typeof testNum);<br>
+            //Undefined: Here testNum is not defined </p>
+         
+    </ul>
+    <hr>
+
+
+    <h3>5.)‘this’ keyword in OOPs in JavaScript :</h3>
+
+    <ul>
+        <li>  In Javascript  this keyword refers to an object. </li>
+        <li>  In an object method, this refers to the object. </li>
+        <li>  Alone, this refers to the global object.</li>
+        <li>  In a function, this refers to the global object.</li>
+        <li>  In a function, in strict mode, this is undefined.</li>
+        <li>  In an event, this refers to the element that received the event.</li>
+    </ul>
+
+
+    <hr>
+
+    <h3>6.i)DOM and Document in JavaScript :</h3>
+
+    <ul>
+        <h3>Document Object Model</h3>
+        <li> When a web page is loaded, the browser creates a Document Object Model of the page. </li>
+        <li>  The HTML DOM model is constructed as a tree of Objects. </li>
+        <li> With the object model, JavaScript gets all the power it needs to create dynamic HTML .</li>
+        <li> JavaScript can change all the HTML elements,attributes, css styles in the page  .</li>
+        <li>JavaScript can react to all existing HTML events in the page  </li>
+        <li>JavaScript can create new HTML events in the page </li>
+    </ul>
+
+
+    <ul>
+        <h3>HTML Dom Document</h3>
+        <li> The HTML DOM document object is the owner of all other objects in your web page.</li>
+
+        <li> The document object represents your web page.  </li>
+        <li>  If you want to access any element in an HTML page, you always start with accessing the document object..</li>  
+         
+        <h3>Examples to use dom object to access and manipulate</h3>
+        <h3>Few Methods for finding html elements:</h3>
+        <li>document.getElementById(id)</li>
+        <li>document.getElementsByTagName(name)</li>
+        <li>document.getElementsByClassName(name)	</li>
+
+        <h3>Few Methods for adding and deleting html elements:</h3>
+
+        <li>document.createElement(element)</li>
+        <li>document.removeChild(element)</li>
+        <li>document.appendChild(element)</li>
+        <li>document.write(text)</li>
+
+
+    </ul>
+
+    <hr>
+
+
+
+
+
+    <h3>6.ii)Array methods in JavaScript :</h3>
+
+    <ul>
+        <h3>Array methods</h3>
+        <li>toString() converts an array to a string of (comma separated) array values. </li>
+        <li>  The join() method also joins all array elements into a string.It behaves just like toString(), but in addition you can specify the separator: </li>
+        <li> The pop() method removes the last element from an array.The pop() method returns the value that was "popped out"</li>
+        <li>The push() method adds a new element to an array (at the end).The push() method returns the new array length</li>
+        <li>The shift() method removes the first array element and "shifts" all other elements to a lower index.The shift() method returns the value that was "shifted out"  </li>
+        <li>The unshift() method adds a new element to an array (at the beginning), and "unshifts" older elements.The unshift() method returns the new array length.</li>
+        <li>The length property provides an easy way to append a new element to an array:</li>
+        <li>Array elements can be deleted using the JavaScript operator delete.Using delete leaves undefined holes in the array.Use pop() or shift() instead.</li>
+        <li>The concat() method creates a new array by merging (concatenating) existing arrays.The concat() method does not change the existing arrays. It always returns a new array.</li>
+        <li>The splice() method adds new items to an array.With clever parameter setting, you can use splice() to remove elements without leaving "holes" in the array</li>
+        <li>The slice() method slices out a piece of an array into a new array.</li>
+       
+        
+    </ul>
+
+
+
+ 
+    
+
+
+
+
+
+     
+
+
+
+
+
+     
+
+    
+</body>
+</html>
